@@ -2,7 +2,7 @@
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
+const FadeInView = ({ children, delay, direction, fullWidth, padding }) => {
   const ref = useRef(null);
 
   const isInView = useInView(ref, { once: false });
@@ -50,4 +50,4 @@ const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
   );
 };
 
-export default FadeIn;
+export default FadeInView;

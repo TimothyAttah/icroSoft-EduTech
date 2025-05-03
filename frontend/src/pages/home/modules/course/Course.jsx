@@ -1,5 +1,10 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
+import coursePix1 from '../../../../assets/awsdeveloper.png';
+import coursePix2 from '../../../../assets/awsnetwork.jpg';
+import coursePix3 from '../../../../assets/awsdev.png';
+import coursePix4 from '../../../../assets/azure-developer.png';
+import coursePix5 from '../../../../assets/solutionarchassociatei.png';
 
 export const ProgramContainer = styled.div`
   max-width: 1200px;
@@ -13,7 +18,7 @@ export const ProgramContainer = styled.div`
 `;
 
 const Course = () => {
-	return (
+  return (
     <ProgramContainer>
       <div className='courses'>
         <div className='container'>
@@ -24,6 +29,7 @@ const Course = () => {
 				</div>
 			</div> */}
           {/* <div className="row">
+
 				<div className="col">
 					<div className="course_search">
 						<form action="#" className="course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between">
@@ -34,6 +40,9 @@ const Course = () => {
 					</div>
 				</div>
 			</div> */}
+          <div className='section_title text-center'>
+            <h2>Choose your course</h2>
+          </div>
           <div className='row'>
             <div className='col'>
               <div className='courses_slider_container'>
@@ -41,7 +50,7 @@ const Course = () => {
                   <div className='owl-item'>
                     <div className='course'>
                       <div className='course_image'>
-                        <img src='/images/course_1.jpg' alt='' />
+                        <img src={coursePix2} alt='' />
                       </div>
                       <div className='course_body'>
                         <div className='course_header d-flex flex-row align-items-center justify-content-start'>
@@ -61,10 +70,10 @@ const Course = () => {
                           Maecenas rutrum viverra sapien sed ferm entum. Morbi
                           tempor odio eget lacus tempus pulvinar.
                         </div>
-                        <div className='course_footer d-flex align-items-center justify-content-start'>
+                        {/* <div className='course_footer d-flex align-items-center justify-content-start'>
                           <div className='course_author_image'>
                             <img
-                              src='/images/featured_author.jpg'
+                              src={coursePix1}
                               alt='https://unsplash.com/@anthonytran'
                             />
                           </div>
@@ -74,7 +83,7 @@ const Course = () => {
                           <div className='course_sales ml-auto'>
                             <span>352</span> Sales
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -82,7 +91,7 @@ const Course = () => {
                   <div className='owl-item'>
                     <div className='course'>
                       <div className='course_image'>
-                        <img src='/images/course_2.jpg' alt='' />
+                        <img src={coursePix3} alt='' />
                       </div>
                       <div className='course_body'>
                         <div className='course_header d-flex flex-row align-items-center justify-content-start'>
@@ -102,7 +111,7 @@ const Course = () => {
                           Maecenas rutrum viverra sapien sed ferm entum. Morbi
                           tempor odio eget lacus tempus pulvinar.
                         </div>
-                        <div className='course_footer d-flex align-items-center justify-content-start'>
+                        {/* <div className='course_footer d-flex align-items-center justify-content-start'>
                           <div className='course_author_image'>
                             <img src='/images/course_author_2.jpg' alt='' />
                           </div>
@@ -112,7 +121,7 @@ const Course = () => {
                           <div className='course_sales ml-auto'>
                             <span>352</span> Sales
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -121,7 +130,7 @@ const Course = () => {
                     <div className='course'>
                       <div className='course_image'>
                         <img
-                          src='/images/course_3.jpg'
+                          src={coursePix4}
                           alt='https://unsplash.com/@annademy'
                         />
                       </div>
@@ -143,7 +152,7 @@ const Course = () => {
                           Maecenas rutrum viverra sapien sed ferm entum. Morbi
                           tempor odio eget lacus tempus pulvinar.
                         </div>
-                        <div className='course_footer d-flex align-items-center justify-content-start'>
+                        {/* <div className='course_footer d-flex align-items-center justify-content-start'>
                           <div className='course_author_image'>
                             <img src='/images/course_author_3.jpg' alt='' />
                           </div>
@@ -153,7 +162,7 @@ const Course = () => {
                           <div className='course_sales ml-auto'>
                             <span>352</span> Sales
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -172,6 +181,6 @@ const Course = () => {
       </div>
     </ProgramContainer>
   );
-}
+};
 
-export default Course
+export default Course;

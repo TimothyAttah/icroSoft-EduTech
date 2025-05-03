@@ -4,7 +4,7 @@ import * as Styles from './SidebarStyles';
 import { CloseBackground } from '../CloseBackground';
 import { newNavData } from '../nav/Nav1';
 import { AiFillCaretDown, AiOutlineClose } from 'react-icons/ai';
-import FadeIn from '../FadeIn2';
+import FadeIn from '../FadeInView';
 
 const Sidebar = ({ openSidebar, setOpenSidebar }) => {
   const handleClose = () => {
@@ -50,7 +50,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
         <Styles.SidebarWrapper>
           <Styles.SidebarListBox>
             {newNavData.map((item, i) => (
-              <FadeIn key={i} delay={(i + 1) * 0.2} direction='right'>
+              <FadeIn key={i} delay={(i + 1) * 0.2} direction='down'>
                 <Styles.NavLinkBox className={item.diff ? 'diff' : ''}>
                   <NavLink to={item.path}>{item.title}</NavLink>
                 </Styles.NavLinkBox>

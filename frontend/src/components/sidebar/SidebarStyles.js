@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const SidebarContainer = styled(motion.div)`
-  width: 220px;
+  width: 280px;
   height: 100vh;
   position: absolute;
   right: 0;
   top: 0px;
-  background-color: #fff;
   background-color: #04044f;
-  background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
+  background-color: #fff;
+  /* background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%); */
   z-index: 999;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -34,6 +34,7 @@ export const SidebarWrapper = styled.div`
     a {
       color: #fff;
       color: orange;
+      color:#000;
 
       &::after {
         background-color: orange;
@@ -55,7 +56,10 @@ export const SidebarCloseBtn = styled.button`
   top: 20px;
   background-color: inherit;
   color: #fff;
+  color: #000;
+  cursor: pointer;
   font-size: 22px;
+  z-index: 999;
 `;
 
 export const SidebarListBox = styled.ul`
@@ -73,6 +77,7 @@ export const NavLinkBox = styled.li`
   a {
     display: flex;
     color: #fff;
+    color: #000;
     text-transform: uppercase;
     line-height: 25px;
     width: 100%;
@@ -86,6 +91,7 @@ export const NavLinkBox = styled.li`
       width: 0%;
       height: 5px;
       background-color: #fff;
+      color: #000;
       border-radius: 30px;
       transition: width 0.8s ease;
     }
@@ -106,6 +112,7 @@ export const DropdownWrapper = styled.div`
   pointer-events: none;
   transition: 0.8s;
   background-color: #fff;
+  color: #000;
   overflow: hidden;
   z-index: 999;
   padding-left: 20px;
@@ -120,6 +127,8 @@ export const DropdownWrapper = styled.div`
     > a {
       display: flex;
       background-color: #fff;
+      color: #000;
+
       padding: 0.8rem 1rem;
       font-size: 0.9rem;
       align-items: center;

@@ -13,6 +13,7 @@ export const Header = styled.header`
   width: 100%;
   height: 5rem;
   z-index: 1000;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
 `;
 
 

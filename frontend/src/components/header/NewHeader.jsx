@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as Styles from './NewHeaderStyles';
-import FadeIn from '../FadeIn2';
+import FadeIn from '../FadeInView';
 import Nav from '../nav/Nav1';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';

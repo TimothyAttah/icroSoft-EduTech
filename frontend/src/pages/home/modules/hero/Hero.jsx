@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 import * as Styles from './HeroStyles';
 import Slider from 'react-slick';
 import courseImg from '../../../../assets/awsdeveloper.png';
+import FadeInView from '../../../../components/FadeInView';
+
 
 const Hero = () => {
   //  const settings = {
@@ -131,34 +133,36 @@ const Hero = () => {
           </Styles.HeroSliderBgContainer>
         </Styles.HeroSliderContainer>
       </Slider>
-      <Styles.HeroCardContainer>
-        <Styles.HeroCardInfo>
-          <Styles.HeroCardInfoPrice>
-            <Link to='/courses'>view program</Link>
-            <p>
-              price: <span>$200</span>
-            </p>
-          </Styles.HeroCardInfoPrice>
-          <Styles.HeroCardInfoTitle>AWS Developer</Styles.HeroCardInfoTitle>
-          <Styles.HeroCardInfoSubTitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            consequuntur exercitationem earum possimus.
-          </Styles.HeroCardInfoSubTitle>
-          <Styles.HeroCardInfoPrice>
-            <p>
-              duration: <span>10 Weeks</span>
-            </p>
-          </Styles.HeroCardInfoPrice>
-          <Styles.HeroCardInfoPrice>
-            <p>
-              cohorts start: <span>24 May 25</span>
-            </p>
-          </Styles.HeroCardInfoPrice>
-        </Styles.HeroCardInfo>
-        <Styles.HeroCardImg>
-          <img src={courseImg} alt='' />
-        </Styles.HeroCardImg>
-      </Styles.HeroCardContainer>
+      <FadeInView direction='down' delay={0.2}>
+        <Styles.HeroCardContainer>
+          <Styles.HeroCardInfo>
+            <Styles.HeroCardInfoPrice>
+              <Link to='/courses'>view program</Link>
+              <p>
+                price: <span>$200</span>
+              </p>
+            </Styles.HeroCardInfoPrice>
+            <Styles.HeroCardInfoTitle>AWS Developer</Styles.HeroCardInfoTitle>
+            <Styles.HeroCardInfoSubTitle>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              consequuntur exercitationem earum possimus.
+            </Styles.HeroCardInfoSubTitle>
+            <Styles.HeroCardInfoPrice>
+              <p>
+                duration: <span>10 Weeks</span>
+              </p>
+            </Styles.HeroCardInfoPrice>
+            <Styles.HeroCardInfoPrice>
+              <p>
+                cohorts start: <span>24 May 25</span>
+              </p>
+            </Styles.HeroCardInfoPrice>
+          </Styles.HeroCardInfo>
+          <Styles.HeroCardImg>
+            <img src={courseImg} alt='' />
+          </Styles.HeroCardImg>
+        </Styles.HeroCardContainer>
+      </FadeInView>
     </Styles.HeroContainer>
   );
 };

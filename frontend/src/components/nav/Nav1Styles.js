@@ -14,7 +14,7 @@ export const Nav = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 10px; */
+  gap: 10px;
   margin-top: 10px;
 
   .active {

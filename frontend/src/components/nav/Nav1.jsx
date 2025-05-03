@@ -4,7 +4,7 @@ import { AiFillHome, AiFillCaretDown } from 'react-icons/ai';
 import * as Styles from './Nav1Styles';
 import { NavLink } from 'react-router-dom';
 import Sidebar from '../sidebar/Sidebar';
-import FadeIn from '../FadeIn2';
+import FadeIn from '../FadeInView';
 
 
 export const newNavData = [
@@ -14,7 +14,7 @@ export const newNavData = [
   },
   {
     title: 'about us',
-    path: '/about_us',
+    path: '/about',
   },
   {
     title: 'courses',
@@ -30,7 +30,7 @@ export const newNavData = [
   },
   {
     title: 'contact',
-    path: '/contact_us',
+    path: '/contact',
   },
 ];
 

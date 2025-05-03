@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import FadeIn from './FadeIn2';
+import FadeIn from './FadeInView';
 
 export const LoaderWrapper = styled.div`
   position: fixed;
