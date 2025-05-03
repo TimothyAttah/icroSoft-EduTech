@@ -13,6 +13,7 @@ export const SidebarContainer = styled(motion.div)`
   z-index: 999;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
+  z-index: 999;
 `;
 
 export const SidebarWrapper = styled.div`
@@ -73,6 +74,7 @@ export const SidebarListBox = styled.ul`
 export const NavLinkBox = styled.li`
   position: relative;
   width: 100%;
+  z-index: 999;
 
   a {
     display: flex;
@@ -82,6 +84,7 @@ export const NavLinkBox = styled.li`
     line-height: 25px;
     width: 100%;
     padding-bottom: 10px;
+    z-index: 999;
 
     &::after {
       content: '';
@@ -124,10 +127,13 @@ export const DropdownWrapper = styled.div`
 
   export const DropdownLink = styled.li`
     position: relative;
+    z-index: 999;
+
     > a {
       display: flex;
       background-color: #fff;
       color: #000;
+      z-index: 999;
 
       padding: 0.8rem 1rem;
       font-size: 0.9rem;
@@ -147,6 +153,7 @@ export const SidebarInfo = styled.div`
   padding: 20px;
   background-color: #04044f;
   width: 100%;
+  z-index: 999;
 
   div {
     margin-bottom: 30px;
