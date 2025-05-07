@@ -3,15 +3,16 @@ import styled from 'styled-components';
 export const TechListContainer = styled.div`
   min-width: 300px;
   width: 100%;
-  width: 400px;
+  /* width: 400px; */
   position: relative;
-  margin: 20px;
+  margin: 20px 0;
   /* cursor: pointer; */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   box-shadow: 0px 10px 0.625rem (0, 0, 0, 0.1);
   box-shadow: 0px -2px rgba(0, 0, 0, 0.25);
   box-shadow: rgb(0 0 0 / 59%) 0px 2px 5px;
   background-color: #fff;
+  box-shadow: 0px 10px 0.625rem (0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   /* font-family: 'Cormorant Garamond', system-ui; */
@@ -22,6 +23,7 @@ export const TechListContainer = styled.div`
     display: block;
     padding-bottom: calc((5 / 4) * 100%);
   } */
+  /* border: 2px solid red; */
 `;
 
 export const TechListContent = styled.div`

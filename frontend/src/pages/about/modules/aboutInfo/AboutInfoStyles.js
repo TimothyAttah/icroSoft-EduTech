@@ -6,7 +6,7 @@ export const AboutInfoContainer = styled.div`
 `;
 
 export const AboutInfoBox = styled.div`
-  width: 75%;
+  width: 95%;
   margin: auto;
   display: flex;
   justify-content: space-around;

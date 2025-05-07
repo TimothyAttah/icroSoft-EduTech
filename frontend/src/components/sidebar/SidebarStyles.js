@@ -5,15 +5,16 @@ export const SidebarContainer = styled(motion.div)`
   width: 280px;
   height: 100vh;
   position: absolute;
+  position: fixed;
   right: 0;
   top: 0px;
   background-color: #04044f;
   background-color: #fff;
   /* background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%); */
-  z-index: 999;
+  z-index: 99999;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  z-index: 999;
+  z-index: 99999;
 `;
 
 export const SidebarWrapper = styled.div`

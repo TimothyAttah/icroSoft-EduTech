@@ -10,7 +10,7 @@ const BackdropContainer = styled.div`
   background-color: #000;
   opacity: 0.5;
   transition: opacity 0.15s linear;
-  z-index: 1044;
+  z-index: 9999;
 `;
 
 const Backdrop = ({ onClick }) => {

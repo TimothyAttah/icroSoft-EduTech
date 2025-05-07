@@ -10,7 +10,7 @@ export const AboutTeacherTitle = styled.h2`
   font-size: 45px;
 `;
 export const AboutTeacherLists = styled.div`
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -21,6 +21,11 @@ export const AboutTeacherListItem = styled.div`
   width: 400px;
   padding-bottom: 20px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  margin: auto;
+
+  @media screen  and (max-width: 420px){
+    width: 100%;
+  }
 `;
 export const AboutTeacherListItemPic = styled.div`
   /* height: 300px; */

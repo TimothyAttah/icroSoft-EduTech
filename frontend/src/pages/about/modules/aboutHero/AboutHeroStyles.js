@@ -9,9 +9,9 @@ export const AboutHeroContainer = styled.div`
   padding-top: 42%;
   position: relative;
 
-  @media screen and (max-width: 550px) {
+  /* @media screen and (max-width: 550px) {
    height: 50vh;
-  }
+  } */
 `;
 
 export const AboutHeroInfoContainer = styled.div`
@@ -28,6 +28,7 @@ export const AboutHeroInfoContainer = styled.div`
 
   @media screen and (max-width: 550px) {
   width: 100%;
+  text-align: center;
 
     h1 {
       font-size: 40px;

@@ -4,7 +4,7 @@ import { FadeIn } from '../../../../components/FadeIn';
 
 const AboutHero = () => {
   return (
-    <div class='home'>
+    <div>
       <Styles.AboutHeroContainer>
         <Styles.AboutHeroInfoContainer>
           <FadeIn delay={0.2} direction='down'>

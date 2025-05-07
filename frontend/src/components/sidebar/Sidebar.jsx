@@ -51,7 +51,10 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
           <Styles.SidebarListBox>
             {newNavData.map((item, i) => (
               <FadeIn key={i} delay={(i + 1) * 0.2} direction='down'>
-                <Styles.NavLinkBox className={item.diff ? 'diff' : ''}>
+                <Styles.NavLinkBox
+                  className={item.diff ? 'diff' : ''}
+                  onClick={handleClose}
+                >
                   <NavLink to={item.path}>{item.title}</NavLink>
                 </Styles.NavLinkBox>
               </FadeIn>

@@ -9,6 +9,8 @@ import courseImg from '../../../../assets/awsdeveloper.png';
 export const HeroContainer = styled.div`
   /* border: 2px solid red; */
   position: relative;
+  z-index: 1;
+
 `;
 
 export const HeroSliderContainer = styled.div`
