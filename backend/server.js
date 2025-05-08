@@ -4,7 +4,6 @@ import express from 'express';
 import cors from 'cors'
 import connectDB from './config/db.js';
 import authRouter from './routes/authRoutes.js';
-import noteRouter from './routes/notesRoutes.js';
 
 const app = express();
 /****** CONNECTING TO MONGODB *******/
@@ -20,7 +19,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/auth', authRouter);
-app.use('/api/notes', noteRouter)
 
 
 const PORT = process.env.PORT || 8080;
